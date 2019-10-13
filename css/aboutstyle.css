@@ -1,0 +1,97 @@
+.nav-menu>li:nth-child(1)>a {
+    color: var(--efile-green);
+}
+.policy-page-wrapper {
+    width: 80%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+/* - - - about-intro section - - -*/
+.about-intro-text {
+    padding: 2rem 0;
+}
+.about-hero {
+    background-image: url("../images/about-assets/about-hero.jpg");
+    height: 100%;
+    min-height: 20vh;
+    background-position: right top;
+    background-size: contain;
+}
+
+.about-main-text>p {
+    color: var(--efile-soft-black);
+    text-align: center;
+    max-width: 1400px;
+}
+.about-main-text {
+    padding: 0 10%;
+}
+/* - - - irs aicpa section - - -*/
+.support-divider {
+    margin: 0 auto 5rem;
+}
+.irs-efile, .aicpa {
+    padding: 0 10% 4rem;
+}
+#aicpa-image {
+    height: 144px;
+    top: calc(50% - 62px);
+}
+#irs-image {
+    height: 80px;
+    top: calc(50% - 32px);
+}
+/* - - - PRIVACY USER AGREEMENT PAGE - - -*/
+.pua {
+    max-width: 75ch;
+}
+.about-p-ua-wrapper {
+    margin: 10vh auto 10%;
+}
+.privacy-text-wrapper {
+    margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 1300px){
+ 
+    .irs-efile, .aicpa {
+        padding: 0 5% 4rem;
+    }
+    .about-main-text {
+        padding: 0 5%;
+    }
+    .about-main-text p{
+        font-size: 2.125rem;
+    }
+}
+@media only screen and (max-width: 885px) {
+    .about-hero {
+        min-height: 28vh;
+        background-position: center top;
+        background-size: cover;
+    }
+    .about-main-text .h3-support-text{
+        font-size: 1.25rem;
+    }
+    .irs-efile, .aicpa {
+        padding: 0 0 4rem;
+    }
+    .about-main-text {
+        padding: 6rem 0;
+    }
+    .tablet-hide {
+        display: none;
+    }
+    .about-p-ua-wrapper p, .about-p-ua-wrapper h3 {
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .about-hero {
+        min-height: 22vh;
+    }
+    .mobile-hide {
+        display: none;
+    }
+}
