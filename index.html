@@ -50,8 +50,8 @@
                         </li>
                     </ul>
                         <div class="signup-login-btns">
-                            <a href="signup.html"><div class="sign-up-btn sign-log-btn-text">sign-up</div></a>
-                            <a href="login.html"><div class="login-btn sign-log-btn-text">log-in</div></a>
+                            <a href="forms/signup.html"><div class="sign-up-btn sign-log-btn-text">sign-up</div></a>
+                            <a href="forms/login.html"><div class="login-btn sign-log-btn-text">log-in</div></a>
                         </div>
                 </nav><!-- END NAV -->
             </div><!-- END HEADER WRAPPER -->
@@ -59,7 +59,11 @@
 
 
         <div class="grid-wrapper">
-<!-- INTRO -->    
+<!-- INTRO --> 
+<section class="blob">
+
+</section>
+
                 <section class="intro-text grid-item">
                     <p class="breadcrumb-text">home</p>
                     <h1><span class="h1-span">Most cost-effective e&#8209;filing</span> option for businesses<br>large and small.
@@ -131,11 +135,15 @@
                 </section>
                 <section class="form-file-visual grid-item main-grid-images">
                 </section>
-<!-- BENEFITS SECTION -->                 
+<!-- BENEFITS SECTION -->
+                <section class="ben-blob">
+
+                </section> 
+
                 <section class="benefits span2column grid-item">
                     <h3><span class="h3-support">As one of the top information return e&#8209;filers authorized by the IRS, eFile360 is here to help guide you through  the e&#8209;filing process and complete it on your behalf.</span></h3>
                     
-                    <p class="support-text">E&#8209;filing with eFile360 eliminates the need to download software, fill out and mail paper copies, and stay up-to-date on the latest IRS regulations. eFile360 manages  these aspects for you, so all you have to do is create a free account and enter form details, which typically  takes just a few minutes.</p>
+                 <p class="support-text">E&#8209;filing with eFile360 eliminates the need to download software, fill out and mail paper copies, and stay up-to-date on the latest IRS regulations. eFile360 manages  these aspects for you, so all you have to do is create a free account and enter form details, which typically  takes just a few minutes.</p>
                     
                     <h3>Benefits of using eFile360 for your e&#8209;filing needs:</h3>
 
@@ -170,7 +178,10 @@
                                 available</p>
                             </div>
                     </div>
+  
                 </section>
+
+
 <!-- SOCIAL PROOF SECTION -->                  
                 
                 <section class="social-sub-grid span2column">
@@ -242,7 +253,14 @@
             </div>
             <div class="logo-divider">
                 <hr>
-                <img src="images/home-assets/logo-bw.svg" alt="efile360 logo">
+                <a href="index.html" onmouseover= "logoColor()" 
+                onmouseout="logoBw()">
+                    <img 
+                    id="logo-colorize" 
+                    src="images/home-assets/logo-bw.svg" 
+                      
+                    alt="efile360 logo"></a>
+                
             </div>
 
             <nav class="nav-main nav-footer" id="footer-nav">
@@ -272,11 +290,11 @@
                                 <li><a href="resources/faqs.html">FAQs</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item"  id="contact-link"><a href="contact.html">Contact</a></li>
+                        <li class="menu-item"  id="contact-link"><a href="forms/contact.html">Contact</a></li>
                     </ul>
                 <div class="signup-login-btns">
-                    <a href="signup.html"><div class="sign-up-btn sign-log-btn-text">sign-up</div></a>
-                    <a href="login.html"><div class="login-btn sign-log-btn-text">log-in</div></a>
+                    <a href="forms/signup.html"><div class="sign-up-btn sign-log-btn-text">sign-up</div></a>
+                    <a href="forms/login.html"><div class="login-btn sign-log-btn-text">log-in</div></a>
                 </div>
             </div>
         </nav>
@@ -284,5 +302,16 @@
             <p class="footer-text">&copy;2019 All rights reserved. www.OnlineFileTaxes.com (An IRS approved provider of e&#8209;filing 1099 for businesses.)</p>
         </footer>
     </main> <!-- END PAGE WRAPPER -->
+    <script>
+        
+        function logoColor() {
+            var logo = document.getElementById("logo-colorize");
+            logo.setAttribute ('src', "images/home-assets/logo.svg");
+        }
+        function logoBw() {
+            var logo = document.getElementById("logo-colorize");
+            logo.setAttribute ('src', "images/home-assets/logo-bw.svg");
+        }
+    </script>
     </body>
 </html>
