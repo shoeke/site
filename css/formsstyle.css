@@ -59,6 +59,26 @@ input[type=text], input[type=password] {
   .modal-content a {
       text-align: right;
   }
+/* - - - Contact Page - - - */
+
+   .contact-hero-image {
+    background-image: url("../images/forms-assets/contact-hero.jpg");
+    background-size: cover;
+    min-width: 100%;
+    min-height: 30vh;
+    background-position:  30% 20%;
+    background-size: contain;    
+}
+.contact-label {
+    font-size: 1.5rem;
+    font-weight: var(--fweight-med);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0;
+}
+.contact-intro-text p {
+    letter-spacing: 0;
+}
 
   @media only screen and (max-width: 1020px) {
     .login-hero-image {
@@ -68,6 +88,12 @@ input[type=text], input[type=password] {
     .signup-hero-image {
         background-position: 30% bottom;
     }
+
+    .contact-hero-image {
+        background-size: cover;
+        background-position: center top;
+    }
+
     .login-form-modal, .signup-form-modal {
         width: 92%;
         min-width: 300px;
