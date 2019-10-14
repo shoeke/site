@@ -14,7 +14,7 @@
     max-width: 100%;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 2rem;
     grid-template-areas: 
     "features pop"
     "more pop"
@@ -43,8 +43,8 @@
     margin-bottom: 2.5rem;
 }
 .feature-sub-text {
-    width: 70%;
-    padding: 1.5rem;
+    width: 60%;
+    padding: 0 1.5rem 1.5rem;
 }
 .feature-sub-image1 {
     background-image: url("../images/blog-assets/blog-feature1.jpg");
@@ -54,8 +54,9 @@
     background-image: url("../images/blog-assets/blog-feature2.jpg");
 }
 .fsi {
-    width: 30%;
+    width: 40%;
     background-size: cover;
+    max-height: 250px;
 }
 
 /* - - - popular posts - - - */
@@ -111,6 +112,8 @@
 .more-image {
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 1rem;
+    max-height: 240px;
 }
 .more1 {
     background-image: url("../images/blog-assets/blog-more1.jpg");
@@ -133,4 +136,74 @@
     border: 0;
 }
 
+@media only screen and (max-width: 1020px) {
+    .blog-intro-text {
+        text-align: center;
+    }
+    .blogpage-grid {
+        grid-template-columns: 5fr 3fr;
+        grid-column-gap: 0;
+        margin-top: 3rem;
+    }
+    .blog-feature h3, .pop-posts h3 {
+        text-align: left;
+    }
+    .feature1, .feature2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .fsi {
+        width: 90%;
+        height: 175px;
+        margin-bottom: 2rem;
+    }
+    .feature-sub-text {
+        width: 100%;
+        padding-left: 0;
+    }
+    .feature-sub-text p, .mini-post-excerpt p, .more-text p {
+        text-align: left;
+    }
+    .more-posts {
+        grid-template-columns: 1fr;
+        grid-gap: 3rem 4rem;
+    }
+    .more-posts h3 {
+        grid-column: 1;
+    }
+} 
+
+@media only screen and (max-width: 885px) {
+    .blogpage-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "features"
+    "pop"
+    "more"
+    "readon";
+    }
+    .fsi {
+        max-width: 375px;
+        background-position: center;
+        margin: 0 auto 2rem;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .more-text {
+        width: 70%;
+    }
+    .more-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 375px)
+{
+    .more-text {
+        width: 100%;
+    }
+    .more-image {
+        display: none;
+    } 
+}
     
