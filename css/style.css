@@ -56,7 +56,7 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 1fr max-content;
     grid-column-gap: 3rem;
-    grid-row-gap: 6rem;
+    grid-row-gap: 4rem;
     margin-top: 10vh;
 }
 .grid-wrapper section:first-child {
@@ -511,8 +511,14 @@ footer .signup-login-btns {
 }
 /* - - - - - HOME PAGE CONTENT - - - - - */
 /* - - - INTRO SECTION - - - */
+.breadcrumb-text {
+    margin-bottom: .25rem;
+}
 .intro-text {
-    padding-top: 2rem;
+    padding-top: 0;
+}
+.grid-wrapper section:first-child {
+    padding-bottom: 0;
 }
 .intro-images {
    display: grid;
@@ -538,10 +544,9 @@ footer .signup-login-btns {
 /* - - - TASK SECTION - - - */
 .task-img1 {
     background-image: url("../images/home-assets/home-task-img1.svg");
-    max-height: 20vh;
-    min-height: 17vh;
+    min-height: 27vh;
     background-position: top;
-    margin-top: 4rem;
+    margin-top: 5%;
 }
 .task-visual {
     display: flex;
@@ -550,10 +555,9 @@ footer .signup-login-btns {
 }
 .task-img2 {
     background-image: url("../images/home-assets/home-task-img2.svg");
-    max-height: 25vh;
-    min-height: 20vh;
-    background-position: bottom;
-    margin-bottom: 4rem;
+    min-height: 28vh;
+    margin-bottom: 5%;
+    background-position: center bottom;
 }
 .arrow-list {
     margin-left: 63px;
@@ -733,6 +737,10 @@ p.quote {
         width:100%;
         padding: 2rem 0;
     }
+
+    .task-img2 {
+        margin-bottom: 10%;
+    }
     .benefit-block-wrap {
         padding: 5% 0;
     }
@@ -752,12 +760,15 @@ p.quote {
     }
     .grid-wrapper {
         grid-template-columns: minmax(280px, 1fr);
-        grid-row-gap: 2rem;
+        grid-row-gap: 1.5rem;
         margin-top: 5vh;
         justify-self: center;
     }
     .btn-style {
         text-align: center;
+    }
+    .task-img2 {
+        margin-bottom: 5%;
     }
     .social-sub-grid {
         grid-template-columns: minmax(300px, 1fr);
@@ -775,7 +786,7 @@ p.quote {
         text-align: center;
     }
     h2 {
-        font-size: 2.5;
+        font-size: 2.5rem;
         line-height: 1.4;
     }
     h3, .h3-support, .h3-support-span {
@@ -864,6 +875,9 @@ p.quote {
     .page-wrapper {
         width: 95%;
     }
+    .grid-wrapper {
+        grid-row-gap: 1rem;
+    }
     h1, .h1-span {
         font-size: 2.55rem;
     }
@@ -872,7 +886,7 @@ p.quote {
         font-size: 2rem;
     }
     h2 {
-        font-size: 2.25;
+        font-size: 2.25rem;
         line-height: 1.2;
     }
     .nav-main {
