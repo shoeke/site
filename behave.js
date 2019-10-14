@@ -1,4 +1,4 @@
-
+//read more faqs on faq page toggle button
 function revealMore() {
     var revealList = document.getElementById("reveal-list");
     var textToggle = document.getElementById("rm-tog");
@@ -19,3 +19,12 @@ function revealMore() {
     }
     
   }
+//logo color swap at footer
+  function logoColor() {
+    var logo = document.getElementById("logo-colorize");
+    logo.setAttribute('src', "../images/home-assets/logo.svg");
+}
+function logoBw() {
+    var logo = document.getElementById("logo-colorize");
+    logo.setAttribute('src', "../images/home-assets/logo-bw.svg");
+}
