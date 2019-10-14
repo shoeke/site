@@ -335,6 +335,7 @@
     margin-top: 3rem;
 }
 /* - - - How Cost Tables Section - - - */
+/*
 .cost-forms-table {
     background-image: url("../images/services-assets/cost-forms-table.svg");
     min-height: 443px;
@@ -353,7 +354,7 @@
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-}
+}*/
 .how-ready {
     text-align: center;
 }
@@ -361,6 +362,76 @@
     font-size: 2.25rem;
     margin-bottom: 2.25rem;
 }
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* - - - Tables Style Section - - - */
+
+.price-table li:nth-child(odd) {
+    background-color: rgba(114,118,119, 0.03);
+    font-weight: var(--fweight-med);
+}
+.price-table li:nth-child(even) {
+    background-color: rgba(114,118,119, 0.06);
+}
+.price-table li:last-child {
+    background-color: var(--efile-blue);
+    color: #fff;
+}
+.price-table li {
+    padding: 1rem;
+}
+
+
+/* - - - forms pricing table - - - */
+.forms-pricing-table ol {
+    grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 1fr 1fr;
+}
+.forms-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7), .forms-pricing-table .table-head li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-head li:nth-child(n+6):nth-child(-n+7) {
+    padding: 0;
+    visibility: hidden;
+    height: 0;
+}
+/* - - -  ACA pricing table - - - */
+.aca-pricing-table ol{
+grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
+}
+.aca-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-data li:nth-child(n+6):nth-child(-n+8), 
+
+.aca-pricing-table .table-head li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-head li:nth-child(n+6):nth-child(-n+8){
+    padding: 0;
+    visibility: hidden;
+    height: 0;
+}
+/* - - - pricing mq area - - - */
+
+@media only screen and (max-width: 540px) {
+
+    .price-table ol {
+        grid-template-columns: 50% 50%;
+    }
+    .price-table li:nth-child(1) {
+        grid-column: 1 / 3;
+        background-color: var(--efile-blue);
+    }
+    .forms-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7),
+    
+    .aca-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7){
+        padding: 0;
+        visibility: visible;
+        height: auto;
+        font-weight: var(--fweight-bold);
+        font-size: 1rem;
+        background-color: rgba(46, 89, 135, .25);    }
+        .aca-pricing-table .table-data li:nth-child(8) {
+            background-color:rgba(114,118,119, 0.06);
+        }
+        .price-table li:last-child {
+            background-color: #fff;
+            color: var(--efile-grey);
+        }
+    }
+
+
+/* - - - - - - - - - - - - - - - - - - - - - */
 @media only screen and (max-width: 1300px) {
 
     .services-hero {

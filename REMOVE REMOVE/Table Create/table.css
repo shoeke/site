@@ -1,4 +1,4 @@
-/* GENERAL TABLES */
+/* - - - GENERAL TABLES  - - - */
 
 .efile-table {
     max-width: 750px;
@@ -26,19 +26,51 @@
 .efile-table li:nth-child(2) {
     background-color: rgba(114,118,119, 0.06);
 }
-
-
 .table-head {
     font-weight: var(--fweight-med);
     text-align: center;
     border-bottom: 3px solid var(--efile-gold);
 }
 
+@media only screen and (max-width: 540px){
+    /* - - - - MQ TABLE CSS - - - - - - */
+    .efile-table {
+        margin: 0 1rem;
+    }
+    .efile-table ol {
+        grid-template-columns: 50% 50%;
+        margin-bottom: 1.5rem;
+        box-shadow: 3px 3px 3px rgba(114,118,119, 0.10);
+    }
+   .efile-table .table-head {
+        display: none;
+    }
+    .table-data {
+        margin: 0;
+    }
+    /* - - - change highlighted box - - - */
+    .efile-table li:first-child {
+    grid-column: 1 / 3; 
+    }
 
-/* - - - pricing table - - - */
-.price-table ol {
-    grid-template-columns: 1.25fr repeat(4, 1fr);
+    .efile-table li:last-child {
+        background-color: #fff;
+        color: var(--efile-grey);
+    }
+    .efile-table li:first-child {
+        background-color: var(--efile-blue);
+        color: #fff;
+    }
+
+    .table-data {
+        text-align: center;
+    }
 }
+
+
+/* - - - - - - - - - - - - - */
+/* - - - pricing table - - - */
+
 .price-table li:nth-child(odd) {
     background-color: rgba(114,118,119, 0.03);
     font-weight: var(--fweight-med);
@@ -54,73 +86,56 @@
     padding: 1rem;
 }
 
+/* - - - forms pricing table - - - */
+.forms-pricing-table ol {
+    grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 1fr 1fr;
+}
+.forms-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7), .forms-pricing-table .table-head li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-head li:nth-child(n+6):nth-child(-n+7) {
+    padding: 0;
+    visibility: hidden;
+    height: 0;
+}
 /* - - -  ACA pricing table - - - */
 .aca-pricing-table ol{
-grid-template-columns: 1.25fr repeat(3, 1fr);
+grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
 }
+.aca-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-data li:nth-child(n+6):nth-child(-n+8), 
 
-/* - - - additional labels for small screen, hidden on desktop - - - */
-.efile-table .label {
-    display: none;
+.aca-pricing-table .table-head li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-head li:nth-child(n+6):nth-child(-n+8){
+    padding: 0;
+    visibility: hidden;
+    height: 0;
 }
+/* - - - pricing mq area - - - */
 
+@media only screen and (max-width: 540px) {
 
-@media only screen and (max-width: 540px){
-    /* - - - - MQ TABLE CSS - - - - - - */
-    .efile-table {
-        margin: 0 1rem;
-    }
-    .efile-table ol {
+    .price-table ol {
         grid-template-columns: 50% 50%;
-        margin-bottom: 1.5rem;
-        box-shadow: 3px 3px 3px rgba(114,118,119, 0.10);
     }
-    /* - - - additional labels for small screen, 
-    hidden on desktop - - - */
-.efile-table .label {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-bottom: 3rem;
-    background-color: var(--efile-gold);
-}
-
-.efile-table .table-head {
-    display: none;
-}
-.table-data {
-    margin: 0;
-}
-    /* - - - change highlighted box - - - */
-    .efile-table li:first-child {
-    grid-column: 1 / 3; 
-    }
-    .deadline-table li:first-child {
-        background-color: var(--efile-green);
-        color: #fff;
-        padding: 1rem;
-    }
-    .efile-table li:last-child {
-        background-color: #fff;
-        color: var(--efile-grey);
-    }
-    .efile-table li:first-child {
+    .price-table li:nth-child(1) {
+        grid-column: 1 / 3;
         background-color: var(--efile-blue);
-        color: #fff;
     }
-
-    .price-table li:last-child {
-        background-color: #fff;
-        color: var(--efile-grey);
+    .forms-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7),
+    
+    .aca-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7){
+        padding: 0;
+        visibility: visible;
+        height: auto;
+        font-weight: var(--fweight-bold);
+        font-size: 1rem;
+        background-color: rgba(46, 89, 135, .25);    }
+        .aca-pricing-table .table-data li:nth-child(8) {
+            background-color:rgba(114,118,119, 0.06);
+        }
+        .price-table li:last-child {
+            background-color: #fff;
+            color: var(--efile-grey);
+        }
     }
-    .table-data {
-        text-align: center;
-    }
-
-}
-
-
-
+        
+ 
 /* DUE DATE TABLE  AREA ONLY */
 /* grid hide extra label columns */
     .due-date-table ol {
@@ -141,9 +156,9 @@ grid-template-columns: 1.25fr repeat(3, 1fr);
 
  @media only screen and (max-width: 540px) {
     /* - - DUE DATE row @mq test - - -*/
+
         .due-date-table ol {
             grid-template-columns: 50% 50%;
-
         }
         .due-date-table li:nth-child(1) {
             grid-column: 1 / 3;
@@ -185,7 +200,6 @@ grid-template-columns: 1.25fr repeat(3, 1fr);
     visibility: hidden;
     height: 0;
 }
-
 @media only screen and (max-width: 540px) {
     .deadline-table ol {
         grid-template-columns: 50% 50%;
@@ -196,7 +210,9 @@ grid-template-columns: 1.25fr repeat(3, 1fr);
     .deadline-table li:first-child {
         background-color: var(--efile-green);
         color: #fff;
+        padding: 1rem;
     }
+
     .deadline-table .table-data li:nth-child(n+2):nth-child(-n+3) {
         padding: 0;
         visibility: visible;
