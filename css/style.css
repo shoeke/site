@@ -22,6 +22,29 @@ html {
 }
 body {
     font-family: var(--main-font);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.margin-wrapper {
+    max-width: 1920px;
+    padding:  2rem;
+    margin:0 auto;
+    border: 3px solid blue;
+    position: relative;
+}
+
+.bg-blob {
+    background-image: url("../images/home-assets/page-blob.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    width: 60%;
+    height: 60%;
+    z-index: -10;
+    right: 0;
+    top: 12rem;
+    display: inline-block;
+    position: absolute;
 }
 .page-wrapper {
     max-width: 1680px;
@@ -425,7 +448,7 @@ footer .signup-login-btns {
 }
 /* - - - - - HOME PAGE CONTENT - - - - - */
 
-/* - - - INTRO SECTION - - - */
+/* - - - INTRO SECTION - - - 
 .blob {
     background-image: url("../images/home-assets/hero-blob.svg");
     background-repeat: no-repeat;
@@ -444,7 +467,7 @@ footer .signup-login-btns {
 .intro-images {
     grid-row: 1; 
     grid-column: 2 / 3; 
-}
+}*/
 
 
 
@@ -683,6 +706,9 @@ p.quote {
     html {
         font-size: 15px;
     }
+    .bg-blob {
+        display: none;
+    }
     .page-wrapper {
         width: 80%;
     }
@@ -691,7 +717,7 @@ p.quote {
         grid-row-gap: 2rem;
         margin-top: 5vh;
     }
-   
+   /*
     .blob {
         grid-row: 2;
         grid-column: 1;
@@ -701,7 +727,7 @@ p.quote {
     .intro-images {
         grid-row: 2; 
         grid-column: 1; 
-    }
+    }*/
 
 
     

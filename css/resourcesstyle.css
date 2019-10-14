@@ -3,13 +3,16 @@
 }
 /* - - - Resources page - - - */
 /* - - - Resources Intro - - - */
-
+.resources-intro-text {
+    padding-top: 2rem;
+}
 .resources-hero {
     background-image: url("../images/resources-assets/resources-hero.jpg");
     height: 100%;
     min-height: 20vh;
     background-position: right top;
     background-size: cover;
+    max-height: 600px;
 }
 .resources-main-text>p {
     color: var(--efile-soft-black);
@@ -81,12 +84,16 @@
 
 
 /* - - - FAQ page - - - */
+.faq-list {
+    padding-top: 2rem;
+}
 .faq-hero-image {
  background-image: url("../images/resources-assets/faq-hero.jpg");
     height: 100%;
     min-height: 20vh;
     background-position: right top;
-    background-size: contain;
+    background-size: cover;
+    max-height: 600px;
     display: block;
 }
 .hidden-list  {
