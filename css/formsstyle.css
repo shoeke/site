@@ -76,6 +76,7 @@ input[type=text], input[type=password] {
     margin-top: 3rem;
     margin-bottom: 1rem;
     letter-spacing: 0;
+    color: var(--efile-blue);
 }
 .contact-intro-text p {
     letter-spacing: 0;

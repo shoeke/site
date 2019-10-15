@@ -62,9 +62,6 @@ body {
 .grid-wrapper section:first-child {
     padding-bottom: 3rem;
 }
-.grid-item {
-    border: 1px solid pink;
-}
 
 .flex-center-column {
     display: flex;
@@ -744,9 +741,7 @@ p.quote {
     .benefit-block-wrap {
         width: 100%;
     }
-    
 }
-
 @media only screen and (max-width: 885px){
 
     html {
