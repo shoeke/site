@@ -5,8 +5,6 @@
 .span-center, .span-center-smallonly  {
     text-align: center;
 }
-
-
 /* - - - Services Hero Section - - - */
 .services-hero-text {
     min-height: 24vh;
@@ -25,7 +23,6 @@
     max-width: 1350px;
     margin: 0 auto;
 }
-
 .services-dots {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -606,7 +603,7 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
     }
     .formplace {
         height: 150px;
-        max-width:65%;
+        max-width:85%;
     }
     .formex {
         height: auto;
@@ -620,7 +617,6 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
         height: auto;
     }
 }
-
 @media only screen and (max-width: 540px) {
     .services-hero {
         min-height: 16vh;
@@ -632,6 +628,7 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
     .our-services {
         width: 90%;
         max-width: 300px;
+        margin:0 auto;
     }
     .e-delivery-illo {
         background-image: url("../images/services-assets/services-illo2-nobg.svg");
@@ -652,5 +649,10 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
 /* - - - how it works 885 media query - - - */
     .how-hero {
         min-height: 22vh;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .formplace {
+        max-width:100%;
     }
 }

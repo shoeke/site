@@ -613,7 +613,7 @@ footer .signup-login-btns {
 
 .benefits {
     z-index: 10;
-    padding: 6rem 0;
+    padding: 2rem 0;
     grid-row: 5;
 }
 .benefits>h3, .benefits>p.support-text {
@@ -836,17 +836,14 @@ p.quote {
     .form-file-text {
         text-align: center;
     }
-
-
     .ben-blob {
         grid-row: 8;
         grid-column: 1 / 1;
         z-index: -10;
     }
-    
     .benefits {
         z-index: 10;
-        padding: 8rem 0;
+        padding: 2rem 0;
         grid-row: 8;
     }
     .benefit-block-wrap {
