@@ -15,11 +15,10 @@
 }
 .about-hero {
     background-image: url("../images/about-assets/about-hero.jpg");
-    height: 100%;
-    min-height: 20vh;
-    max-height: 600px;
-    background-position: right top;
-    background-size: cover;
+    min-width: 100%;
+    min-height: 30vh;
+    background-position:  30% 20%;
+    background-size: contain; 
 }
 
 .about-main-text>p {
@@ -69,12 +68,10 @@
     }
 }
 @media only screen and (max-width: 885px) {
-    /*.bg-blob {
-        display: none;}*/
     .about-hero {
-        min-height: 28vh;
         background-position: center top;
         background-size: cover;
+        min-height: 50vh;
     }
     .about-main-text .h3-support-text{
         font-size: 1.25rem;
@@ -82,9 +79,7 @@
     .irs-efile, .aicpa {
         padding: 0 0 4rem;
     }
-    .about-main-text {
-        padding: 6rem 0;
-    }
+
     .tablet-hide {
         display: none;
     }

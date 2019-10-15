@@ -171,11 +171,10 @@
 }
 .how-hero {
     background-image: url("../images/services-assets/how-hero.jpg");
-    height: 100%;
-    min-height: 20vh;
-    background-position: right top;
-    background-size: cover;
-    max-height: 600px;
+    min-width: 100%;
+    min-height: 30vh;
+    background-position: 30% 20%;
+    background-size: contain;
 }
 .how-text ul {
     line-height: 1.6;
@@ -335,26 +334,6 @@
     margin-top: 3rem;
 }
 /* - - - How Cost Tables Section - - - */
-/*
-.cost-forms-table {
-    background-image: url("../images/services-assets/cost-forms-table.svg");
-    min-height: 443px;
-    width: 100%;
-    background-size: contain;
-    background-position: left top;
-    background-repeat: no-repeat;
-}
-.cost-forms p, .aca-forms p {
-    text-align: center;
-}
-.aca-forms-table {
-    background-image: url("../images/services-assets/cost-aca-table.svg");
-    min-height: 700px;
-    width: 100%;
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-}*/
 .how-ready {
     text-align: center;
 }
@@ -362,7 +341,7 @@
     font-size: 2.25rem;
     margin-bottom: 2.25rem;
 }
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - */
 /* - - - Tables Style Section - - - */
 
 .price-table li:nth-child(odd) {
@@ -377,7 +356,7 @@
     color: #fff;
 }
 .price-table li {
-    padding: 1rem;
+    padding: 1rem .5rem;
 }
 
 
@@ -564,9 +543,9 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
         }
 /* - - - how it works 885 media query - - - */
     .how-hero {
-        min-height: 34vh;
-        background-position: center;
+        background-position: center top;
         background-size: cover;
+        min-height: 50vh;
     }
     .how-illo {
         min-height: 28vh;
