@@ -14,11 +14,10 @@
 }
 .services-hero {
     background-image: url("../images/services-assets/services-hero.jpg");
-    height: 100%;
-    min-height: 20vh;
-    background-position: right top;
-    background-size: cover;
-    max-height: 600px;
+    min-width: 100%;
+    min-height: 30vh;
+    background-position:  30% 20%;
+    background-size: contain; 
 }
 /* - - - Our Services Section - - - */
 .our-services {
@@ -511,7 +510,7 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
         grid-row: 7;
     }
     .correction-file-illo {
-        min-height: 20vh;
+        min-height: 30vh;
     }
     .outsourcing-illo {
         grid-row: 11;
@@ -526,9 +525,9 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
         min-height: 16vh;
     }
     .services-hero {
+        background-position: center top;
         background-size: cover;
-        min-height: 24vh;
-        background-position: center;
+        min-height: 50vh;
     }
     .services-dots {
         grid-template-columns: repeat(3, 1fr);
@@ -635,10 +634,20 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
         max-width: 300px;
     }
     .e-delivery-illo {
-        min-height: 20vh;
+        background-image: url("../images/services-assets/services-illo2-nobg.svg");
+        background-position: center;
     }
     .fed-state-illo {
-        min-height: 20vh;
+        background-image: url("../images/services-assets/services-illo3-nobg.svg");
+        background-position: center;
+    }
+    .correction-file-illo {
+        background-image: url("../images/services-assets/services-illo4-nobg.svg");
+        background-position: center;
+    }
+    .afford-care-illo {
+        background-image: url("../images/services-assets/services-illo6-nobg.svg");
+        background-position: center;
     }
 /* - - - how it works 885 media query - - - */
     .how-hero {
