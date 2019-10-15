@@ -104,6 +104,7 @@
 }
 #reveal-list {
     display: none;
+    margin-top: 2rem;
 }
 .faq-q-list li {
     margin-bottom: 1.25rem;
@@ -138,7 +139,6 @@ button {
   .read:hover {
       cursor: pointer;
   }
-
 #rm-tog {
     padding-left: 2rem;
     color: var(--efile-gold);
@@ -153,14 +153,12 @@ button {
 .notes li:first-child {
     margin-bottom:1.5rem; 
 }
-
 .list-text {
     margin-left: 3rem;
     margin-bottom: 3rem;
     line-height: 1.5;
     color: var(--efile-grey);
 }
-
 .list-text li {
     margin-bottom: 1rem;
 }
@@ -199,9 +197,6 @@ button {
 .area-notes p {
     margin-bottom: 1rem;
 }
-
-
-
 @media only screen and (max-width: 885px) {
     .pen-info {
         flex-direction: column-reverse;
