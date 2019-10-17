@@ -41,7 +41,7 @@ body {
     height: 60%;
     z-index: -10;
     right: 0;
-    top: 12rem;
+    top: 4rem;
     display: inline-block;
     position: absolute;
 }
@@ -55,13 +55,13 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 1fr min-content;
-    grid-column-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
     grid-row-gap: 4rem;
     margin-top: 1rem;
 }
+/*
 .grid-item {
-    border: 1px solid pink;
-}
+   */
 .grid-wrapper section:first-child {
     padding-bottom: 3rem;
 }
@@ -253,7 +253,7 @@ h5 {
     width: 50%;
 }
 .main-logo img {
-    width: 50%;
+    width: 256px;
     max-width: 320px;
     min-width: 180px;
     height: auto;
@@ -550,20 +550,22 @@ footer .signup-login-btns {
 /* - - - TASK SECTION - - - */
 .task-img1 {
     background-image: url("../images/home-assets/home-task-img1.svg");
-    min-height: 27vh;
+    height: 28vh;
     background-position: top;
     margin-top: 5%;
 }
 .task-visual {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .task-img2 {
     background-image: url("../images/home-assets/home-task-img2.svg");
-    min-height: 28vh;
-    margin-bottom: 5%;
+    height: 34vh;
+    margin-bottom: 8%;
+    margin-top: 15%;
     background-position: center bottom;
+    margin-top: 15%;
 }
 .arrow-list {
     margin-left: 63px;

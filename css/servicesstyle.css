@@ -122,7 +122,6 @@
 .formex {
     width: 100%;
     max-width: 450px;
-
     margin: 0 0 1.5rem;
     padding: 0 0 1rem;
 }
@@ -197,8 +196,8 @@
     justify-items: center;
 }
 .how-benefit {
-    width: 375px;
-    height: 375px;
+    width: 325px;
+    height: 325px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -207,7 +206,7 @@
 .how-benefit p {
     text-align: left;
     padding-top: 2rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.4;
 }
 
@@ -348,10 +347,7 @@
     list-style: none;
     padding: .5rem;
 }
-ol {
-    border: 1px solid pink
-  }
-  ol li{
+  ol li {
     list-style-type: none;
     padding: .5rem;
   }
@@ -418,78 +414,10 @@ ol {
       .forms-pricing-table ol {
         grid-template-rows: 70px repeat(6, 1fr);
       }
-
-/* - - - Tables Style Section - 
-
-.price-table li:nth-child(odd) {
-    background-color: rgba(114,118,119, 0.03);
-    font-weight: var(--fweight-med);
-}
-.price-table li:nth-child(even) {
-    background-color: rgba(114,118,119, 0.06);
-}
-.price-table li:last-child {
-    background-color: var(--efile-blue);
-    color: #fff;
-}
-.price-table li {
-    padding: 1rem .5rem;
-}
-
-
-/* - - - forms pricing table - - -
-.forms-pricing-table ol {
-    grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 1fr 1fr;
-}
-.forms-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7), .forms-pricing-table .table-head li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-head li:nth-child(n+6):nth-child(-n+7) {
-    padding: 0;
-    visibility: hidden;
-    height: 0;
-}
-/* - - -  ACA pricing table - - - 
-.aca-pricing-table ol{
-grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
-}
-.aca-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-data li:nth-child(n+6):nth-child(-n+8), 
-
-.aca-pricing-table .table-head li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-head li:nth-child(n+6):nth-child(-n+8){
-    padding: 0;
-    visibility: hidden;
-    height: 0;
-}
-/* - - - pricing mq area - - -
-
-@media only screen and (max-width: 540px) {
-
-    .price-table ol {
-        grid-template-columns: 50% 50%;
     }
-    .price-table li:nth-child(1) {
-        grid-column: 1 / 3;
-        background-color: var(--efile-blue);
-    }
-    .forms-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .forms-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7),
-    
-    .aca-pricing-table .table-data li:nth-child(n+2):nth-child(-n+3), .aca-pricing-table .table-data li:nth-child(n+6):nth-child(-n+7){
-        padding: 0;
-        visibility: visible;
-        height: auto;
-        font-weight: var(--fweight-bold);
-        font-size: 1rem;
-        background-color: rgba(46, 89, 135, .25);    }
-        .aca-pricing-table .table-data li:nth-child(8) {
-            background-color:rgba(114,118,119, 0.06);
-        }
-        .price-table li:last-child {
-            background-color: #fff;
-            color: var(--efile-grey);
-        }
-    }
-
-
 /* - - - - - - - - - - - - - - - - - - - - - */
 @media only screen and (max-width: 1300px) {
-
+    
     .services-hero {
         min-height: 16vh;
         background-position: center top;
@@ -523,6 +451,7 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
     }
 }
 @media only screen and (max-width: 1020px) {
+   
     .tin-illo {
         width: 100%;
         background-position: right 86%;
@@ -545,12 +474,10 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
         grid-row: 3;
         margin: 0 auto;
     }
-  
     .sp-box-text  {
         line-height: 1.6;
         padding: 5% 5% 0;
     } 
-
     .formex {
         max-width: 100%;
     }
@@ -558,7 +485,6 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
         width: 100%;
         max-width: 100%;
     }
- 
     .how-benefit-boxes {
         grid-template-columns: repeat(2, 1fr);
     }

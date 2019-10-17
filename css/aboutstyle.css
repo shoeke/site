@@ -1,15 +1,6 @@
 .nav-menu>li:nth-child(1)>a {
     color: var(--efile-green);
 }
-
-
-.policy-page-wrapper {
-    width: 80%;
-    max-width: 1290px;
-    margin: 0 auto;
-}
-
-
 .about-intro-text {
     padding: 2rem 0;
 }
@@ -20,7 +11,6 @@
     background-position: top;
     background-size: contain; 
 }
-
 .about-main-text>p {
     color: var(--efile-soft-black);
     text-align: center;
@@ -46,7 +36,7 @@
 }
 /* - - - PRIVACY USER AGREEMENT PAGE - - -*/
 .pua {
-    max-width: 75ch;
+    max-width: 1680px;
 }
 .about-p-ua-wrapper {
     margin: 10vh auto 10%;
