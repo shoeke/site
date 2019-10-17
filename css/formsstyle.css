@@ -108,6 +108,9 @@ input[type=text], input[type=password] {
     .modal-content {
         padding: 2rem 1.5rem;
     }
+    #id01 .modal-content, #id02 .modal-content {
+        margin-top: -10rem;
+    }
 }
 
 @media only screen and (max-width: 885px) {
@@ -119,9 +122,7 @@ input[type=text], input[type=password] {
         min-height: 40vh;
         background-position: bottom;
     }
-    #id01 .modal-content, #id02 .modal-content {
-        margin-top: -10rem;
-    }
+   
 }
 
 @media only screen and (max-width: 375px) {

@@ -499,7 +499,6 @@ footer .signup-login-btns {
     margin-bottom: 8%;
     margin-top: 15%;
     background-position: center bottom;
-    margin-top: 15%;
 }
 .arrow-list {
     margin-left: 63px;
@@ -720,6 +719,7 @@ p.quote {
         text-align: center;
     }
     .task-img2 {
+        margin-top: 0;
         margin-bottom: 5%;
     }
     .social-sub-grid {
