@@ -442,8 +442,8 @@ footer .signup-login-btns {
 .footer-text {
     margin: 5rem auto 3rem; 
 }
-
-/* - - - GENERAL TABLES  - - - 
+/*
+ - - - GENERAL TABLES  - - - 
 
 .efile-table {
     max-width: 750px;
@@ -477,7 +477,7 @@ footer .signup-login-btns {
     border-bottom: 3px solid var(--efile-gold);
 }
 @media only screen and (max-width: 540px){
-    /* - - - - MQ TABLE CSS - - - - - - 
+     - - - - MQ TABLE CSS - - - - - - 
     .efile-table {
         margin: 0 1rem;
     }
@@ -492,7 +492,7 @@ footer .signup-login-btns {
     .table-data {
         margin: 0;
     }
-    /* - - - change highlighted box - - - 
+     - - - change highlighted box - - - 
     .efile-table li:first-child {
     grid-column: 1 / 3; 
     }
