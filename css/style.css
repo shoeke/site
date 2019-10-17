@@ -662,7 +662,6 @@ footer .signup-login-btns {
 }
 
 p.quote {
-    line-height: 1.6rem;
     height: auto;
     /*max-height: 18rem;*/
     overflow: hidden;
@@ -817,7 +816,6 @@ p.quote {
     }
    .social-person p {
        text-align: left;
-       line-height: 1.5;
    }
 }
 @media only screen and (max-width: 540px) {
@@ -889,9 +887,6 @@ p.quote {
     }
     .btn-text {
         font-size: 1.1rem;
-    }
-    .profile-pic {
-    display: none;
     }
     .form {
         width: 285px;
