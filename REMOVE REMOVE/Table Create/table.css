@@ -8,12 +8,21 @@ ol {
   /* -- grid for each column, to align rows*/
   .aca-pricing-table ol {
     display: grid;
-    grid-template-rows: 60px 1fr;
+    grid-template-rows: 80px repeat(10, 1fr);
+  }
+  .forms-pricing-table ol {
+    display: grid;
+    grid-template-rows: 80px repeat(6, 1fr);
   }
   /* -- overall grid for table, extra columns for mq columns hidden*/
   .aca-pricing-table {
     display: grid;
     grid-template-columns:  1.25fr 1fr 0 1fr 0 1fr;
+    width: 50%;
+  }
+  .forms-pricing-table {
+    display: grid;
+    grid-template-columns:  1.25fr 1fr 0 1fr 0 1fr 0 1fr;
     width: 50%;
   }
   .qty2 {
@@ -44,7 +53,7 @@ ol {
     .qty2 {
       visibility: visible;
     }
-    .aca-pricing-table {
+    .aca-pricing-table, .forms-pricing-table {
        grid-template-columns: 1.25fr 1fr;
     }
     .gen2-table {
@@ -52,7 +61,7 @@ ol {
     }
     .gen2-table ol:last-child {
         background-color: rgba(114,118,119, 0.06);
-        color: var(--efile-soft-black);
+        color: var(--efile-grey);
   }
   
 
