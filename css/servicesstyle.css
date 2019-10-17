@@ -339,8 +339,87 @@
     font-size: 2.25rem;
     margin-bottom: 2.25rem;
 }
-/* - - - - - - - - - - - - - - - - - - - */
-/* - - - Tables Style Section - - - */
+/* - - - - - Modified Tables Style - - - - - - - */
+.gen2-table {
+    max-width: 750px;
+    letter-spacing: .0175em;
+}
+.gen2-table li {
+    list-style: none;
+    padding: .5rem;
+}
+ol {
+    border: 1px solid pink
+  }
+  ol li{
+    list-style-type: none;
+    padding: .5rem;
+  }
+  /* -- grid for each column, to align rows*/
+  .aca-pricing-table ol {
+    display: grid;
+    grid-template-rows: 100px repeat(10, 1fr);
+  }
+  .forms-pricing-table ol {
+    display: grid;
+    grid-template-rows: 100px repeat(6, 1fr);
+  }
+  /* -- overall grid for table, extra columns for mq columns hidden*/
+  .aca-pricing-table {
+    display: grid;
+    grid-template-columns:  1.25fr 1fr 0 1fr 0 1fr;
+  }
+  .forms-pricing-table {
+    display: grid;
+    grid-template-columns:  1.25fr 1fr 0 1fr 0 1fr 0 1fr;
+  }
+  .qty2 {
+    visibility: hidden;
+    padding: 0;
+    height: 0;
+  }
+  /* -- -- shading -- -- */
+.gen2-table ol:nth-child(odd) {
+    background-color: rgba(114,118,119, 0.03);
+}
+.gen2-table ol:nth-child(even) {
+    background-color: rgba(114,118,119, 0.06);
+}
+.gen2-table ol:last-child {
+    background-color: var(--efile-blue);
+    color: #fff;
+}
+
+  /* -- -- header-style -- -- */
+  .gen2-table ol li:first-child {
+      border-bottom: 3px solid var(--efile-gold);
+      font-weight: var(--fweight-med);
+      align-self: end;
+  }
+
+  @media only screen and (max-width:540px) {
+    .qty2 {
+      visibility: visible;
+    }
+    .aca-pricing-table, .forms-pricing-table {
+       grid-template-columns: 1.25fr 1fr;
+    }
+    .gen2-table {
+        grid-row-gap: 2rem;
+    }
+    .gen2-table ol:last-child {
+        background-color: rgba(114,118,119, 0.06);
+        color: var(--efile-grey);
+  }
+    /* -- grid for each column, to align rows*/
+    .aca-pricing-table ol {
+        grid-template-rows: 70px repeat(10, 1fr);
+      }
+      .forms-pricing-table ol {
+        grid-template-rows: 70px repeat(6, 1fr);
+      }
+
+/* - - - Tables Style Section - 
 
 .price-table li:nth-child(odd) {
     background-color: rgba(114,118,119, 0.03);
@@ -358,7 +437,7 @@
 }
 
 
-/* - - - forms pricing table - - - */
+/* - - - forms pricing table - - -
 .forms-pricing-table ol {
     grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 1fr 1fr;
 }
@@ -367,7 +446,7 @@
     visibility: hidden;
     height: 0;
 }
-/* - - -  ACA pricing table - - - */
+/* - - -  ACA pricing table - - - 
 .aca-pricing-table ol{
 grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
 }
@@ -378,7 +457,7 @@ grid-template-columns: 1.25fr 0 0 1fr 1fr 0 0 0 1fr;
     visibility: hidden;
     height: 0;
 }
-/* - - - pricing mq area - - - */
+/* - - - pricing mq area - - -
 
 @media only screen and (max-width: 540px) {
 

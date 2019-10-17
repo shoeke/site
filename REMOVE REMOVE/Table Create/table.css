@@ -1,3 +1,12 @@
+.gen2-table {
+    max-width: 750px;
+    letter-spacing: .0175em;
+}
+.gen2-table li {
+    list-style: none;
+    padding: .5rem;
+}
+
 ol {
     border: 1px solid pink
   }
@@ -48,8 +57,8 @@ ol {
       font-weight: var(--fweight-med);
       align-self: end;
   }
-
-  @media only screen and (max-width:885px) {
+ 
+  @media only screen and (max-width:540px) {
     .qty2 {
       visibility: visible;
     }
@@ -71,7 +80,7 @@ ol {
 
 
 
-/* - - - MAIN TABLES to keep - - - */
+/* - - - MAIN TABLES to keep - - - 
 .gen2-table {
     max-width: 750px;
     letter-spacing: .0175em;
@@ -81,7 +90,7 @@ ol {
     padding: .5rem;
 }
 
-
+*/
 
 /*
 .efile-table {
