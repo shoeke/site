@@ -80,9 +80,6 @@
         padding: 0 0 4rem;
     }
 
-    .tablet-hide {
-        display: none;
-    }
     .about-p-ua-wrapper p, .about-p-ua-wrapper h3 {
         text-align: left;
     }
@@ -91,7 +88,5 @@
     .about-hero {
         min-height: 22vh;
     }
-    .mobile-hide {
-        display: none;
-    }
+
 }

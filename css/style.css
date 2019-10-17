@@ -57,7 +57,7 @@ body {
     grid-template-rows: 1fr min-content;
     grid-column-gap: 1.5rem;
     grid-row-gap: 4rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .grid-item {
     border: 1px solid pink;
@@ -96,9 +96,9 @@ body {
 
 h1, .h1-span{
     font-family: var(--header-font);
-    font-size: 4rem;
+    font-size: 3.35rem;
     line-height: 1.28;
-    letter-spacing: -.02em;
+    letter-spacing: -.04em;
     color: var(--efile-soft-black);
 }
 h1 {
@@ -865,7 +865,7 @@ p.quote {
         grid-row-gap: .5rem;
     } 
     .bene-box {
-        height: 200px;
+        height: 180px;
     }
     .bene-box p.support-text, .bene-box p.bene-box p.support-text {
         text-align:left;
