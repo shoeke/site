@@ -442,73 +442,7 @@ footer .signup-login-btns {
 .footer-text {
     margin: 5rem auto 3rem; 
 }
-/*
- - - - GENERAL TABLES  - - - 
 
-.efile-table {
-    max-width: 750px;
-    letter-spacing: .0175em;
-}
-.efile-table li {
-    list-style: none;
-    padding: 1rem .5rem;
-}
-.efile-table .table-head li {
-    padding: 1rem .5rem;
-    display: flex;
-    align-items: flex-end;
-}
-.efile-table ol {
-    display: grid;
-    grid-template-columns: 25% 25% 50%;
-    width: 100%;
-    margin: 0;
-}
-.efile-table li:first-child {
-    background-color: rgba(114,118,119, 0.03);
-    font-weight: var(--fweight-med);
-}
-.efile-table li:nth-child(2) {
-    background-color: rgba(114,118,119, 0.06);
-}
-.table-head {
-    font-weight: var(--fweight-med);
-    text-align: center;
-    border-bottom: 3px solid var(--efile-gold);
-}
-@media only screen and (max-width: 540px){
-     - - - - MQ TABLE CSS - - - - - - 
-    .efile-table {
-        margin: 0 1rem;
-    }
-    .efile-table ol {
-        grid-template-columns: 50% 50%;
-        margin-bottom: 1.5rem;
-        box-shadow: 3px 3px 3px rgba(114,118,119, 0.10);
-    }
-   .efile-table .table-head {
-        display: none;
-    }
-    .table-data {
-        margin: 0;
-    }
-     - - - change highlighted box - - - 
-    .efile-table li:first-child {
-    grid-column: 1 / 3; 
-    }
-
-    .efile-table li:last-child {
-        background-color: #fff;
-        color: var(--efile-grey);
-    }
-    .efile-table li:first-child {
-        background-color: var(--efile-blue);
-        color: #fff;
-    }
-    .table-data {
-        text-align: center;
-    }
-}
 /* - - - - - HOME PAGE CONTENT - - - - - */
 /* - - - INTRO SECTION - - - */
 .breadcrumb-text {
