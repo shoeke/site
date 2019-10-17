@@ -48,16 +48,19 @@ body {
 .page-wrapper {
     max-width: 1680px;
     min-width: 300px;
-    width: 90%;
+    width: 94%;
     margin: 0 auto;
 }
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: 1fr max-content;
-    grid-column-gap: 3rem;
+    grid-template-rows: 1fr min-content;
+    grid-column-gap: 1.5rem;
     grid-row-gap: 4rem;
-    margin-top: 10vh;
+    margin-top: 2rem;
+}
+.grid-item {
+    border: 1px solid pink;
 }
 .grid-wrapper section:first-child {
     padding-bottom: 3rem;
@@ -244,7 +247,7 @@ h5 {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: .75rem;
 }
 .logobox {
     width: 50%;
@@ -531,7 +534,6 @@ footer .signup-login-btns {
     justify-content: space-between;
     margin-top: 1rem;
     width: 90%;
-    padding: 1rem 0;
 }
 .support-icons img {
     width: 15%;
@@ -562,8 +564,8 @@ footer .signup-login-btns {
 }
 /* - - - SUPPORT FORMS SECTION - - - */
 .support-forms {
-    width: 80%;
-    max-width: 1250px;
+    width: 90%;
+
     margin: 0 auto;
 }
 .support-forms h3 {
@@ -574,8 +576,8 @@ footer .signup-login-btns {
     justify-content: space-around;
 }
 .form {
-    width: 100%;
-    min-height: 13vh;
+    width: 400px;
+    height: 200px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -598,23 +600,17 @@ footer .signup-login-btns {
     background-image: url("../images/home-assets/home-forms-img.svg");
 }
 /* - - - BENEFITS SECTION - - - */
-.ben-blob {
-        background-image: url("../images/home-assets/bg-blob2.svg");
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: cover;
-        padding-top: 54vh;
-    }
-.ben-blob {
-    grid-row: 5;
-    grid-column: 1 / 3;
-    z-index: -10;
-}
 
 .benefits {
+    height: min-content;
     z-index: 10;
-    padding: 2rem 0;
+    padding: 8rem 0;
     grid-row: 5;
+
+    background-image: url("../images/home-assets/bg-blob2.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 }
 .benefits>h3, .benefits>p.support-text {
     text-align: center;
@@ -639,10 +635,12 @@ footer .signup-login-btns {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 135%;
     min-height: 175px;
     max-height: 294px;
 } 
+.bene-box .block-text-title {
+    padding: .5rem 0 1.5rem;
+}
 .bene-box p.support-text {
     margin-bottom: 0;
 }
@@ -678,18 +676,33 @@ footer .signup-login-btns {
     align-items: flex-start;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .profile-pic {
     width: 100px;
     height: 100px;
-    margin-left: -1rem;
+    border-radius: 50px;
+    position: absolute;
     z-index: -2;
+    background-color: #f4ca7a;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 26px;
+    margin-top: 10px;
+    font-weight: var(--fweight-bold);
+}
+.social-person .blue {
+    background-color: #5780ad;
+}
+.social-person .green {
+    background-color: #8da46e;
 }
 .social-text-block {
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
+    padding-left: 80px;
     height: 100%;
     min-height: 200px;
     max-height: 400px;
