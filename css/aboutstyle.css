@@ -17,7 +17,7 @@
     background-image: url("../images/about-assets/about-hero.jpg");
     min-width: 100%;
     min-height: 30vh;
-    background-position:  30% 20%;
+    background-position: top;
     background-size: contain; 
 }
 
@@ -41,8 +41,8 @@
     top: calc(50% - 62px);
 }
 #irs-image {
-    height: 80px;
-    top: calc(50% - 32px);
+    height: 60px;
+    top: calc(50% - 22px);
 }
 /* - - - PRIVACY USER AGREEMENT PAGE - - -*/
 .pua {

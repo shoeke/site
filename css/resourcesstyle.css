@@ -10,7 +10,7 @@
     background-image: url("../images/resources-assets/resources-hero.jpg");
     min-width: 100%;
     min-height: 30vh;
-    background-position:  30% 20%;
+    background-position: top;
     background-size: contain; 
 }
 .resources-main-text>p {
@@ -90,7 +90,7 @@
  background-image: url("../images/resources-assets/faq-hero.jpg");
     min-width: 100%;
     min-height: 30vh;
-    background-position:  30% 20%;
+    background-position: top;
     background-size: contain; 
     display: block;
 }

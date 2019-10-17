@@ -14,7 +14,7 @@
     background-image: url("../images/services-assets/services-hero.jpg");
     min-width: 100%;
     min-height: 30vh;
-    background-position:  30% 20%;
+    background-position:  top;
     background-size: contain; 
 }
 /* - - - Our Services Section - - - */

@@ -19,7 +19,7 @@
     background-size: contain;
     min-width: 100%;
     min-height: 30vh;
-    background-position:  30% 20%;
+    background-position: top;
 }
 /* - - - Signin Page - - - */
 
@@ -28,7 +28,7 @@
     background-size: contain;
     min-width: 100%;
     min-height: 30vh;
-    background-position:  30% 30%;
+    background-position: top;
 }
 
 /* - - - Form Styling - - - */
@@ -43,8 +43,13 @@
     padding: 3rem 2rem;
     background-color: #fff;
     box-shadow: 0px 3px 20px rgba(114,118,119, 0.16);
-    margin-top: -30rem;
-
+    
+}
+#id02 .modal-content {
+    margin-top: -45rem;
+}
+#id01 .modal-content {
+    margin-top: -20rem;
 }
 .modal-content .container {
     display: flex;
@@ -67,7 +72,7 @@ input[type=text], input[type=password] {
     background-image: url("../images/forms-assets/contact-hero.jpg");
     min-width: 100%;
     min-height: 30vh;
-    background-position:  30% 20%;
+    background-position: top;
     background-size: contain;    
 }
 .contact-label {
