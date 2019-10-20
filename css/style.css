@@ -457,7 +457,7 @@ footer {
 .logo-divider img {
     width: 236px;
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50% - 34px);
     left: calc(50% - 118px);
     z-index: 2;
 }
