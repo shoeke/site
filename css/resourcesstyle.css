@@ -1,4 +1,5 @@
 .nav-menu>li:nth-child(3)>a {
+    color: #7EA44B;
     color: var(--efile-green);
 }
 /* - - - Resources page - - - */
@@ -14,6 +15,7 @@
     background-size: contain; 
 }
 .resources-main-text>p {
+    color: #3c3c3c;
     color: var(--efile-soft-black);
     text-align: center;
     max-width: 1400px;
@@ -60,22 +62,27 @@
 }
 .efile-table li:first-child {
     background-color: rgba(114,118,119, 0.03);
+    font-weight: 500;
     font-weight: var(--fweight-med);
 }
 .efile-table li:nth-child(2) {
     background-color: rgba(114,118,119, 0.06);
 }
 .deadline-table li:last-child {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
     color: #fff;
 }
 .due-date-table li:last-child {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
     color: #fff;
 }
 .table-head {
+    font-weight: 500;
     font-weight: var(--fweight-med);
     text-align: center;
+    border-bottom: 3px solid #F4A50F;
     border-bottom: 3px solid var(--efile-gold);
 }
 
@@ -89,6 +96,7 @@
     background-color: transparent;
 }
 .deadline-table li:last-child {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
     color: #fff;
 }
@@ -106,9 +114,11 @@
         grid-column: 1 / 3;
     }
     .deadline-table li:first-child {
+        background-color: #7EA44B;
         background-color: var(--efile-green);
         color: #fff;
         padding: 1rem;
+        font-weight: 600;
         font-weight: var(--fweight-bold);
         font-size: 1.3rem;
         padding: .75rem;
@@ -119,6 +129,7 @@
         padding: 0;
         visibility: visible;
         height: min-content;
+        font-weight: 600;
         font-weight: var(--fweight-bold);
         font-size: 1rem;
         background-color: rgba(126, 164, 75, .25);
@@ -126,6 +137,7 @@
     }
     .deadline-table li:last-child {
         background-color:rgba(114,118,119, 0.06);
+        color: #727677;
         color: var(--efile-grey);
     }
 }
@@ -139,6 +151,7 @@
     background-color: transparent;
 }
 .due-date-table li:last-child {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
     color: #fff;
 }
@@ -158,6 +171,7 @@
     }
     .due-date-table li:nth-child(1) {
         grid-column: 1 / 3;
+        background-color: #2E5987;
         background-color: var(--efile-blue);
         color: #fff;
         text-align: center;
@@ -172,9 +186,11 @@
     }
     .due-date-table li:last-child {
         background-color:rgba(114,118,119, 0.06);
+        color: #727677;
         color: var(--efile-grey);
     }
     .due-date-table li:first-child {
+        font-weight: 600;
         font-weight: var(--fweight-bold);
         font-size: 1.3rem;
         padding: .75rem;
@@ -222,6 +238,7 @@ button {
     border: 0;
 }
 #rm {
+    color: #F4A50F;
     color: var(--efile-gold);
     font-size: 1rem;
     display: block;
@@ -239,6 +256,7 @@ button {
   }
 #rm-tog {
     padding-left: 2rem;
+    color: #F4A50F;
     color: var(--efile-gold);
 }
 .error-type {
@@ -255,6 +273,7 @@ button {
     margin-left: 3rem;
     margin-bottom: 3rem;
     line-height: 1.5;
+    color: #727677;
     color: var(--efile-grey);
 }
 .list-text li {

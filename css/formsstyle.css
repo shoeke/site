@@ -8,10 +8,13 @@
     margin-bottom: 1.5rem;
 }
 .green-span {
+    color: #7EA44B;
     color: var(--efile-green);
+    font-weight: 500;
     font-weight: var(--fweight-med);
 }
 .green-span:hover {
+    border-bottom: 1px solid #7EA44B;
     border-bottom: 1px solid var(--efile-green);
 }
 .login-hero-image {
@@ -77,10 +80,12 @@ input[type=text], input[type=password] {
 }
 .contact-label {
     font-size: 1.5rem;
+    font-weight: 500;
     font-weight: var(--fweight-med);
     margin-top: 3rem;
     margin-bottom: 1rem;
     letter-spacing: 0;
+    color: #2E5987;
     color: var(--efile-blue);
 }
 .contact-intro-text p {

@@ -1,5 +1,6 @@
 /* - - - Services Page - - - */
 .nav-menu>li:nth-child(2)>a {
+    color: #7EA44B;
     color: var(--efile-green);
 }
 .span-center, .span-center-smallonly  {
@@ -46,21 +47,27 @@
     font-size: 1.25rem;
 }
 .dot1 {
+    background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
 .dot2 {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
 }
 .dot3 {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
 }
 .dot4 {
+    background-color: #727677;
     background-color: var(--efile-grey);
 }
 .dot5 {
+    background-color: #3c3c3c;
     background-color: var(--efile-soft-black);
 }
 .dot6 {
+    background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
 /* - - - TIN Section - - - */
@@ -104,6 +111,7 @@
     font-size: 1rem;
     line-height: 1.3;
     color: #fff;
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     margin-bottom: .5rem;
     text-align: left;
@@ -132,6 +140,7 @@
     background-repeat: no-repeat;
 }
 .class1 {
+    background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
 .class1-2, .class2-2 {
@@ -141,12 +150,14 @@
     background-image: url("../images/home-assets/form1099.svg");
 }
 .class2 {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
 }
 .eplace2 {
     background-image: url("../images/home-assets/form1098.svg");
 }
 .class3 {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
 }
 .eplace3 {
@@ -211,21 +222,27 @@
 }
 
 .howbox1 {
+    background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
 .howbox2 {
+    background-color: #727677;
     background-color: var(--efile-grey);
 }
 .howbox3 {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
 }
 .howbox4 {
+    background-color: #3c3c3c;
     background-color: var(--efile-soft-black);
 }
 .howbox5 {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
 }
 .howbox6 {
+    background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
 /* - - - How Delivery Section - - - */
@@ -249,9 +266,11 @@
     padding-left: 1rem;
 }
 #span-bold, #span2-bold, #span3-bold {
+    font-weight: 500;
     font-weight: var(--fweight-med);
 }
 .d-plan {
+    color: #3c3c3c;
     color: var(--efile-soft-black);
     font-size: 1.85rem;
     margin-bottom: 1.5rem;
@@ -296,6 +315,7 @@
 
 /* - - - How Pricing Section - - - */
 .pricing {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
     z-index: -5;
     margin-top: -15rem;
@@ -382,13 +402,16 @@
     background-color: rgba(114,118,119, 0.06);
 }
 .gen2-table ol:last-child {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
     color: #fff;
 }
 
   /* -- -- header-style -- -- */
   .gen2-table ol li:first-child {
+    border-bottom: 3px solid #F4A50F;
       border-bottom: 3px solid var(--efile-gold);
+      font-weight: 500;
       font-weight: var(--fweight-med);
       align-self: end;
   }
@@ -405,6 +428,7 @@
     }
     .gen2-table ol:last-child {
         background-color: rgba(114,118,119, 0.06);
+        color: #727677;
         color: var(--efile-grey);
   }
     /* -- grid for each column, to align rows*/

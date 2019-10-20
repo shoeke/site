@@ -1,7 +1,7 @@
 /*  - - - VARIABLES - - -  */
 :root {
-    --header-font:'IBM Plex Sans', 'Work Sans', sans-serif;
-    --main-font: 'Raleway','Montserrat' , sans-serif;
+    --header-font:'IBM Plex Sans', 'Work Sans', 'Verdana', sans-serif;
+    --main-font: 'Raleway','Montserrat', 'Verdana', sans-serif;
     --efile-green: #7EA44B;
     --efile-blue: #2E5987;
     --efile-gold: #F4A50F;
@@ -21,6 +21,7 @@ html {
     font-size: 16px;
 }
 body {
+    font-family: 'Raleway','Montserrat', 'Verdana', sans-serif;
     font-family: var(--main-font);
     max-width: 1920px;
     margin: 0 auto;
@@ -87,7 +88,9 @@ body {
     color: var(--efile-gray);
 }
 .faq-q-list a:hover {
+    color: #3c3c3c;
     color: var(--efile-soft-black);
+    border-bottom: 1 px solid #3c3c3c;
     border-bottom: 1px solid var(--efile-soft-black);
 }
 
@@ -95,60 +98,78 @@ body {
 /* - - - - -   TYPE - - - - -   */
 
 h1, .h1-span{
+    font-family: 'IBM Plex Sans', 'Work Sans', 'Verdana', sans-serif;
     font-family: var(--header-font);
     font-size: 3.35rem;
     line-height: 1.28;
     letter-spacing: -.04em;
+    color: #3c3c3c;
     color: var(--efile-soft-black);
 }
 h1 {
+    font-weight: 600;
     font-weight: var(--fweight-bold);
     margin-bottom: 2.25rem;
 }
 .h1-span {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     letter-spacing: -.025em;
 }
 h2 {
+    font-family: 'IBM Plex Sans', 'Work Sans', 'Verdana', sans-serif;
     font-family: var(--header-font);
     font-size: 2.813rem;
+    font-weight: 500;
     font-weight: var(--fweight-med);
     letter-spacing: -.035em;
     line-height: 1.467;
+    color: #3c3c3c;
     color: var(--efile-soft-black);
     margin-bottom: 2.25rem;
 }
 h3, .h3-support, .h3-support-span {
+    font-family: 'IBM Plex Sans', 'Work Sans', 'Verdana', sans-serif;
     font-family: var(--header-font);
     font-size: 2.35rem;
     line-height: 1.4;
     letter-spacing: -.035em;
+    color: #3c3c3c;
     color: var(--efile-soft-black);
 }
 h3 {
+    font-weight: 500;
     font-weight: var(--fweight-med);
     margin-bottom: 2.25rem;
 }
 .h3-support {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
 }
 .h3-support-span {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
+    color: #7EA44B;
     color: var(--efile-green);
 }
 h4 {
+    font-family: 'IBM Plex Sans', 'Work Sans', 'Verdana', sans-serif;
     font-family: var(--header-font);
     font-size: 2.5rem;
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     line-height: 1.4;
     letter-spacing: -.025em;
+    color: #3c3c3c;
     color: var(--efile-soft-black);
 }
 
 p, .main-text, h5 {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     font-size: 1.5rem;
     line-height: 1.5;
+    color: #727677;
     color: var(--efile-grey);
 }
 h5 {
@@ -159,57 +180,72 @@ h5 {
     margin-bottom: 2.25rem;
 }
 .btn-text {
+    font-weight: 500;
     font-weight: var(--fweight-med);
     font-size: 1.25rem;
     color: #fff;
     display: inline-block;
 }
 .sign-log-btn-text {
+    font-weight: 500;
     font-weight: var(--fweight-med);
     font-size: 1rem;
     letter-spacing: .034em;
     text-transform: uppercase;
     text-align: center;
+    color: #7EA44B;
     color: var(--efile-green);
 }
 .support-text, .support-text-span, .short-list-text {
     font-size: 1.125rem;
     line-height: 1.6;
+    color: #727677;
     color: var(--efile-grey);
 }
 .support-text {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     margin-bottom: 2.25rem;
 }
 .support-text-span {
+    font-weight: 500;
     font-weight: var(--fweight-med);
+    color: #2E5987;
     color: var(--efile-blue);
 }
 .short-list-text {
+    font-weight: 500;
     font-weight: var(--fweight-med);
+    color: #727677;
     color: var(--efile-grey);
     line-height: 2.25;
 }
 .nav-text a {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     font-size: 1.063rem;
     letter-spacing: .024em;
+    color: grey;
     color: var(--efile-grey);
 }
 .breadcrumb-text {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     font-size: 1.25rem;
+    color: #7EA44B;
     color: var(--efile-green);
     text-transform: uppercase;
     margin-bottom: 2.75rem;
 }
 .block-text-title {
+    font-weight: 400;
     font-weight: var(--fweight-reg);
     font-size: 2.1rem;
     line-height: 1.056;
     color: #fff;
 }
 .text-dark {
+    color: #3c3c3c;
     color: var(--efile-soft-black)
 }
 .text-white {
@@ -223,6 +259,7 @@ h5 {
     color: #fff;
 }
 .form-num {
+    font-weight: 500;
     font-weight: var(--fweight-med);
     font-size: 6.688rem;
     font-size: 12px;
@@ -230,14 +267,17 @@ h5 {
     color: #fff;
 }
 .footer-text {
+        font-weight: 400;
         font-weight: var(--fweight-reg);
         font-size: .75rem;
         letter-spacing: .032em;
         line-height: 2;
+        color: #727677;
         color: var(--efile-grey);
         text-align: center;
 }
 .social-links .fab {
+    color: #727677;
     color: var(--efile-grey);
     font-size: 1.5rem;
 }
@@ -283,6 +323,7 @@ h5 {
     width: auto;
     padding: .5rem;
     background-color: #fff;
+    border-top: 3px solid #F4A50F;
     border-top: 3px solid var(--efile-gold);
     box-shadow: 0px 4px 4px rgba(114,118,119, 0.3);
     z-index: 1; 
@@ -320,6 +361,7 @@ h5 {
 
 
 .dropmenu li:hover {
+    color: #3c3c3c;
     color: var(--efile-soft-black);
     background-color: rgba(244, 165, 15, .25);
 }
@@ -332,8 +374,10 @@ h5 {
 .sign-up-btn, .login-btn {
     width: 100px;
     height: 34px;
+    border: 1px solid #7EA44B;
     border: 1px solid var(--efile-green);
     border-radius: 15px;
+    color: #7EA44B;
     color: var(--efile-green);
     background-color: #fff;
     padding: .5rem 0;
@@ -343,6 +387,7 @@ h5 {
 }
 .login-btn {
     color: #fff;
+    background-color: #7EA44B;
     background-color: var(--efile-green);
     margin-left: 25px;
 }
@@ -358,12 +403,15 @@ vertical-align: middle;
     box-shadow: 0px 4px 4px rgba(114,118,119, 0.3);
 }
 .gold-btn {
+    background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
 .blue-btn {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
 }
 .green-btn {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
 }
 .arrow {
@@ -388,6 +436,7 @@ footer {
     transition: all .2s ease-in-out;
 }
 .social-links .fab:hover {
+    color: #2E5987;
     color: var(--efile-blue);
     transform: scale(1.5);
 }
@@ -398,6 +447,7 @@ footer {
     height: 118px;
 }
 .logo-divider hr {
+    color: #727677;
     color: var(--efile-grey);
     width: 100%;
     position: absolute;
@@ -433,6 +483,7 @@ footer .footer-nav-item, #contact-link {
     margin: 0 4%;
 }
 #contact-link a:hover {
+    color: #7EA44B;
     color: var(--efile-green);
 }
 
@@ -589,18 +640,21 @@ footer .signup-login-btns {
     margin-bottom: 0;
 }
 .b-box1 {
+    background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
 .b-box2 {
     background-color: #fff;
 }
 .b-box3 {
+    background-color: #2E5987;
     background-color: var(--efile-blue);
 }
 .b-box4 {
     background-color: #fff;
 }
 .b-box5 {
+    background-color: #7EA44B;
     background-color: var(--efile-green);
 }
 /* - - - SOCIAL PROOF SECTION - - - */
@@ -635,6 +689,7 @@ footer .signup-login-btns {
     text-align: center;
     padding-top: 26px;
     margin-top: 10px;
+    font-weight: 600;
     font-weight: var(--fweight-bold);
 }
 .social-person .blue {
@@ -653,13 +708,18 @@ footer .signup-login-btns {
     justify-content: space-between;
 }
 .social-person p {
+    color: #3c3c3c;
     color: var(--efile-soft-black);
     line-height: 1.2;
 }
 .social-person p span {
+    font-weight: 600;
     font-weight: var(--fweight-bold);
 }
-
+.social-person img {
+    width: 35px;
+    height: 35px;
+}
 p.quote {
     height: auto;
     /*max-height: 18rem;*/

@@ -1,4 +1,5 @@
 .nav-menu>li:nth-child(1)>a {
+    color: #7EA44B;
     color: var(--efile-green);
 }
 .about-intro-text {
@@ -12,6 +13,7 @@
     background-size: contain; 
 }
 .about-main-text>p {
+    color: #3c3c3c;
     color: var(--efile-soft-black);
     text-align: center;
     max-width: 1400px;
