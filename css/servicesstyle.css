@@ -70,6 +70,12 @@
     background-color: #F4A50F;
     background-color: var(--efile-gold);
 }
+/* - - - Mail and E-File Section - - - */
+.mail-illo {
+    background-image: url("../images/services-assets/services-illo-mail.svg");
+    min-height: 20vh;
+    position: left;
+}
 /* - - - TIN Section - - - */
 
 .tin-illo {
@@ -462,7 +468,7 @@
         background-position: right 65%;
         width: 100%;
     }
-    .correction-file-illo {
+    .correction-file-illo, .mail-illo {
         min-height: 28vh;
     }
     .service-page .btn-style .blue-btn {
@@ -478,15 +484,15 @@
    
     .tin-illo {
         width: 100%;
-        background-position: right 86%;
+        background-position: 86%;
     }
     .fed-state-illo {
         background-position: right 86%;
-    }.correction-file-illo {
+    }.correction-file-illo, .mail-illo {
         background-position: left 86%;
     }
     .afford-care-illo {
-        background-position: center 76%;
+        background-position: right;
     }
     .services-form-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -520,28 +526,28 @@
 @media only screen and (max-width: 885px) {
 
     /* - - - Sections to Center at Small Screen - - - */
-    .tin-text, .e-delivery, .fed-state-text, .correction-file-text, .outsourcing-text, .afford-care-text   {
+    .mail-text, .tin-text, .e-delivery, .fed-state-text, .correction-file-text, .outsourcing-text, .afford-care-text   {
         text-align: center;
     }
      /* - - - Services media query 885 - - - */
     .tin-illo {
-        display: none;
+        grid-row: 10;
     }
     .e-delivery-illo {
         background-position: bottom left;
         min-height: 34vh;
     }
     .fed-state-illo {
-        grid-row: 7;
+        grid-row: 6;
     }
-    .correction-file-illo {
+    .correction-file-illo, .mail-illo {
         min-height: 30vh;
     }
     .outsourcing-illo {
-        grid-row: 11;
+        grid-row: 14;
     }
     .afford-care-illo {
-        grid-row: 14;
+        grid-row: 17;
     }
     .service-page {
         grid-row-gap: 3rem;
@@ -626,6 +632,26 @@
         width: 100%;
         justify-content: center;
     }
+    .mail-illo {
+        background-image: url("../images/services-assets/services-illo-mail-nobg.svg");
+        background-position: center;
+    }
+    .e-delivery-illo {
+        background-image: url("../images/services-assets/services-illo2-nobg.svg");
+        background-position: center;
+    }
+    .fed-state-illo {
+        background-image: url("../images/services-assets/services-illo3-nobg.svg");
+        background-position: center;
+    }
+    .correction-file-illo {
+        background-image: url("../images/services-assets/services-illo4-nobg.svg");
+        background-position: center;
+    }
+    .afford-care-illo {
+        background-image: url("../images/services-assets/services-illo6-nobg.svg");
+        background-position: center;
+    }
     
     .class1 {
         grid-row: 1;
@@ -671,25 +697,10 @@
     }
     .our-services {
         width: 90%;
-        max-width: 300px;
+        /*max-width: 300px;*/
         margin:0 auto;
     }
-    .e-delivery-illo {
-        background-image: url("../images/services-assets/services-illo2-nobg.svg");
-        background-position: center;
-    }
-    .fed-state-illo {
-        background-image: url("../images/services-assets/services-illo3-nobg.svg");
-        background-position: center;
-    }
-    .correction-file-illo {
-        background-image: url("../images/services-assets/services-illo4-nobg.svg");
-        background-position: center;
-    }
-    .afford-care-illo {
-        background-image: url("../images/services-assets/services-illo6-nobg.svg");
-        background-position: center;
-    }
+   
     
 /* - - - how it works 885 media query - - - */
     .how-hero {
