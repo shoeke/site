@@ -704,7 +704,6 @@ footer .signup-login-btns {
     padding-left: 80px;
     height: 100%;
     min-height: 200px;
-    max-height: 400px;
     justify-content: space-between;
 }
 .social-person p {
@@ -722,8 +721,8 @@ footer .signup-login-btns {
 }
 p.quote {
     height: auto;
-    /*max-height: 18rem;*/
-    overflow: hidden;
+    /*max-height: 18rem;
+    overflow: hidden;*/
     margin-bottom: 1.75rem;
 
 }
