@@ -74,7 +74,7 @@
 .mail-illo {
     background-image: url("../images/services-assets/services-illo-mail.svg");
     min-height: 20vh;
-    position: left;
+    background-position: left;
 }
 /* - - - TIN Section - - - */
 
@@ -87,6 +87,7 @@
 .e-delivery-illo {
     background-image: url("../images/services-assets/services-illo2.svg");
     min-height: 20vh;
+    background-position: left;
 }
 /* - - - Fed and State Section - - - */
 .fed-state-illo {
